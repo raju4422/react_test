@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script> -->
+
+<!-- Popper JS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Latest compiled JavaScript -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> -->
+    <style>
+      .navbar-right {
+    float: right!important;
+     margin-right: 30px; 
+}
+.navbar{
+background-color: rgb(105 79 147) !important;
+
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+#navbarTogglerDemo03{
+  margin-right: 50px;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.banner_background{
+  background-image: url('https://theuiaa.org/wp-content/uploads/2021/01/Dolomites-stock-UIAA.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.banner_background div{
+  /* position: absolute;
+  top: 30px; */
+}
+.Body_container .image{
+height: 400px;
+}
+
+.Body_container .small_image{
+  height: 200px;
+}
+
+.container-fluid{
+  padding: 0px;
+  
+}
+.navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+}
+.navbar-brand{
+  color:#fff !important;
+}
+
+
+button.input-group-addon {
+  position: absolute;
+  right: -38px;
+  top: 0;
+  padding: 2px;
+  z-index: 999;
+  height: 34px;
+  width: 38px;
+}
+.input-group-btn{
+position: absolute !important;
+right: 4px;
+    top: 6px;
+}
+.card-text{
+  text-align: left;
+}
+.card-body{
+  text-align: left;
+}
+.card-body .fa{
+  color:orange
+}
+.card-body p{
+  margin-bottom: 5px;
+}
+.required_to{
+  font-size: 30px;
+  text-align: left;
+  padding-left: 35px;
+}
+
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script>
+      $(".navbar-nav li a").click(function(event) {
+  var toggle = $(".navbar-toggle").is(":visible");
+  if (toggle) {
+    $(".navbar-collapse").collapse('hide');
+  }
+});
+    </script>
+  </body>
+</html>
